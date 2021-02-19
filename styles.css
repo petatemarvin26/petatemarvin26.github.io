@@ -70,7 +70,7 @@ body div.name {
     width: 47.5%;
     font-size: 20px;
     position: absolute;
-    top: 275px;
+    top: 30%;
     text-align: right;
     z-index: 1;
 }
@@ -96,7 +96,7 @@ body .picture-pane {
     width: 34vw;
     height: 34vw;
     border-radius: 50%;
-    top: 180px;
+    top: 18%;
     right: 9%;
     z-index: 1;
     background-color: #292929;
