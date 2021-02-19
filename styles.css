@@ -1,13 +1,29 @@
-body {
-    font-family: Consolas;
-    color: #ffffff;
-    background-color: #110a29;
-}
-
-h1 {
-    color: #ffffff;
-}
-
+body,
+h1,
+a,
 p {
-    color: #ffffff;
+    font-family: cursive;
+    font-size: 15px;
+    color: #c9c9c9;
+}
+
+body {
+    background: url('./assets/image/background.png') fixed;
+}
+
+header {
+    background-color: transparent;
+    padding: 5px;
+}
+
+header ul {}
+
+header li {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+}
+
+header a {
+    text-decoration: none;
 }
