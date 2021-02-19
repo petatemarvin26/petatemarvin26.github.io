@@ -24,48 +24,42 @@ body {
 
 header {
     position: fixed;
+    display: flex;
+    z-index: 1;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    align-items: center;
+    padding: 20px;
+    align-self: center;
     justify-content: left;
-    z-index: 1;
 }
 
-header h1.logo {
-    display: flex;
-    margin: 0px 30px 0px 30px;
-}
-
-header .logo-separator {
-    display: flex;
-    width: 5px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #c9c9c9;
+header img {
+    width: 60px;
+    height: 60px;
+    margin: 0px 30px 0px 20px
 }
 
 header ul {
-    width: 85%;
-    height: 50%;
     display: flex;
+    padding: 0px;
+    margin: 0px;
+    border-left: #c9c9c9 2px solid;
+    justify-content: center;
     align-items: center;
-    justify-content: right;
 }
 
 header li {
     display: flex;
-    min-width: 10%;
-    height: 50px;
-    margin: 0px 7.5px 0px 7.5px;
+    min-width: 9.5vw;
+    height: 40px;
+    margin: 0px 0px 0px 10px;
     align-items: center;
     justify-content: center;
 }
 
 header a {
-    font-size: 15px;
+    font-size: min(2vw, 15px);
     font-weight: bold;
     text-align: center;
 }
@@ -85,6 +79,7 @@ body div.name h1 {
     height: 6vw;
     margin: 0;
     padding: 0;
+    color: #dd7519;
 }
 
 body div.name h4 {
@@ -94,7 +89,7 @@ body div.name h4 {
     padding: 0;
 }
 
-body .profile-pane {
+body .picture-pane {
     position: absolute;
     width: 34vw;
     height: 34vw;
@@ -103,8 +98,7 @@ body .profile-pane {
     right: 12%;
     z-index: 1;
     background-color: #292929;
-    border-color: #303030;
-    border: #303030 10px solid;
+    border: #dd7519 10px solid;
 }
 
 body .right-side-bar {
@@ -113,10 +107,17 @@ body .right-side-bar {
     right: 0;
     width: 30%;
     height: 100%;
-    background-color: #303030;
+    background-color: #dd7519;
 }
 
-@media screen and (max-width: 500px) {
-    body div.name h1 {}
-    body div.name h2 {}
+header a:hover {
+    color: #dd7519;
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 400px) {
+    header {
+        background-color: red;
+    }
 }
