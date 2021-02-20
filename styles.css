@@ -18,8 +18,17 @@ a {
 }
 
 body {
-    height: 5000px;
+    height: 2500px;
     background-color: #212121;
+}
+
+body .right-side-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 27.5%;
+    height: 100%;
+    background-color: #dd7519;
 }
 
 header {
@@ -71,7 +80,7 @@ body div.profile-pane {
     position: absolute;
     z-index: 2;
     top: 18vw;
-    right: 8%;
+    right: 10%;
     min-width: 87.5%;
     align-items: center;
     justify-content: space-around;
@@ -81,7 +90,7 @@ body .picture-pane {
     width: 30vw;
     height: 30vw;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2;
     background-color: #292929;
     border: #dd7519 1.5vw solid;
 }
@@ -90,11 +99,14 @@ body div.name {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: right;
+    margin-right: 5vw;
 }
 
 body div.name h1 {
     letter-spacing: 2px;
     font-size: max(5vw, 20px);
+    width: 50vw;
     height: 6.75vw;
     margin: 0;
     padding: 0;
@@ -103,42 +115,51 @@ body div.name h1 {
 
 body div.name h4 {
     font-size: max(3vw, 12.5px);
+    width: 50vw;
     height: 4vw;
     margin: 0;
-    padding: 0 2% 0 0;
-}
-
-body .right-side-bar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 27.5%;
-    height: 100%;
-    background-color: #dd7519;
+    padding: 0;
 }
 
 body div.about {
     display: flex;
+    position: relative;
+    z-index: 1;
+    margin-top: 60vw;
     flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    position: absolute;
-    top: 60vw;
-    width: 70%;
-    margin: 5vw;
-    padding: 4vw 6vw 4vw 6vw;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #212121;
 }
 
-body div.about h3 {
+body div div.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 5vw;
+    padding: 5vw 7vw 5vw 7vw;
+    background-color: #212121;
+    border-left: #dd7519 1.5vw solid;
+}
+
+body div div.prefer-languages {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 5vw;
+    padding: 5vw 7vw 5vw 7vw;
+    color: #212121;
+    background-color: #dd7519;
+    border-right: #212121 2vw solid;
+}
+
+body div h3 {
     font-size: max(3vw, 18px);
     margin: 2vw 0vw 0vw 0vw;
     padding: 0;
 }
 
-body div.about p {
-    font-size: max(2.5vw, 14px);
+body div p {
+    font-size: max(2.5vw, 13px);
     margin: 3vw 0vw 2vw 0vw;
     padding: 0;
 }
@@ -162,4 +183,23 @@ header nav img.menu-bar:hover {
         border-left: 0px;
         justify-content: flex-end;
     }
+}
+
+@media screen and (max-width: 400px) {
+    /* header nav img.menu-bar {
+        display: block;
+    }
+    header nav div.nav-list a {
+        display: none;
+    }
+    header nav.navigator {
+        border-left: 0px;
+        justify-content: flex-end;
+    }
+    body div.profile-pane {
+        background-color: red;
+    }
+    body .picture-pane {
+        display: none;
+    } */
 }
