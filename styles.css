@@ -138,7 +138,7 @@ body div.about h3 {
 }
 
 body div.about p {
-    font-size: max(2.5vw, 15px);
+    font-size: max(2.5vw, 14px);
     margin: 3vw 0vw 2vw 0vw;
     padding: 0;
 }
