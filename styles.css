@@ -72,7 +72,7 @@ body div.profile-pane {
     z-index: 2;
     top: 18vw;
     right: 8%;
-    width: 80%;
+    min-width: 87.5%;
     align-items: center;
     justify-content: space-around;
 }
@@ -94,18 +94,18 @@ body div.name {
 
 body div.name h1 {
     letter-spacing: 2px;
-    font-size: 5vw;
-    height: 7vw;
+    font-size: max(5vw, 20px);
+    height: 6.75vw;
     margin: 0;
     padding: 0;
     color: #dd7519;
 }
 
 body div.name h4 {
-    font-size: 3vw;
-    height: 3.5vw;
+    font-size: max(3vw, 12.5px);
+    height: 4vw;
     margin: 0;
-    padding: 0 5% 0 0;
+    padding: 0 2% 0 0;
 }
 
 body .right-side-bar {
@@ -127,19 +127,19 @@ body div.about {
     width: 70%;
     margin: 5vw;
     padding: 4vw 6vw 4vw 6vw;
-    font-size: 3vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #212121;
 }
 
 body div.about h3 {
-    margin: 0;
+    font-size: max(3vw, 18px);
+    margin: 2vw 0vw 0vw 0vw;
     padding: 0;
 }
 
 body div.about p {
-    font-size: 2.5vw;
-    margin: 2vw 0vw 1vw 0vw;
+    font-size: max(2.5vw, 15px);
+    margin: 3vw 0vw 2vw 0vw;
     padding: 0;
 }
 
