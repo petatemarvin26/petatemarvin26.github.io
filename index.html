@@ -4,6 +4,7 @@
 <head>
     <title>Petate Marvin</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script type="text/javascript" src="./javascript/index.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
@@ -11,25 +12,38 @@
     <header>
         <img class="logo" src="./assets/image/logo.png">
         <nav class="navigator">
-            <div class="nav-list">
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Experience</a>
-                <a href="">Contact</a>
+            <div class="nav-list" id="nav-list">
+                <div class="navigate">
+                    <a href="#home" id="nav-home">Home</a>
+                </div>
+                <div class="navigate">
+                    <a href="#about" id="nav-about">About</a>
+                </div>
+                <div class="navigate">
+                    <a href="#project" id="nav-project">Projects</a>
+                </div>
+                <div class="navigate">
+                    <a href="#experience" id="nav-exp">Experience</a>
+                </div>
+                <div class="navigate">
+                    <a href="#contact" id="nav-contact">Contact</a>
+                </div>
             </div>
-            <a href="" class="icon">
-                <img class="menu-bar" src="./assets/image/menu-bar.png">
+            <a id="menu-bar" class="menu-bar">
+                <img id="menu-bar-img" class="menu-bar-img" src="./assets/image/menu-bar.png">
             </a>
         </nav>
     </header>
     <div class="profile-pane">
-        <div class="name">
-            <h1>Marvin Petate</h1>
-            <h4>Mobile Developer</h4>
+        <div class="profile">
+            <div class="name">
+                <h1>Marvin Petate</h1>
+                <h4>Mobile Developer</h4>
+            </div>
+            <div class="picture-pane"></div>
         </div>
-        <div class="picture-pane"></div>
     </div>
-    <div class="about">
+    <div class="about" id='about'>
         <div class="description">
             <h3>Description</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, laborum commodi aperiam ipsum iusto voluptates at cum adipisci cumque iste provident doloremque illum praesentium enim labore harum soluta veritatis eaque.</p>
@@ -44,8 +58,18 @@
                 <p>laborum commodi aperiam ipsum iusto voluptates at cum adipisci cumque iste provident doloremque illum praesentium enim labore harum soluta veritatis eaque.</p>
             </div>
         </div>
+        <div class="content">
+            <div class="prefer-languages">
+                <h3>Prefer Languages</h3>
+                <p>laborum commodi aperiam ipsum iusto voluptates at cum adipisci cumque iste provident doloremque illum praesentium enim labore harum soluta veritatis eaque.</p>
+            </div>
+            <div class="prefer-languages">
+                <h3>Prefer Languages</h3>
+                <p>laborum commodi aperiam ipsum iusto voluptates at cum adipisci cumque iste provident doloremque illum praesentium enim labore harum soluta veritatis eaque.</p>
+            </div>
+        </div>
     </div>
-    <div class="right-side-bar"></div>
+    <div class="right-side-bar" />
 </body>
 
 </html>
