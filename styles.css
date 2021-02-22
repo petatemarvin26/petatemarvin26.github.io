@@ -21,6 +21,7 @@ a {
 
 body {
     background-color: #212121;
+    margin: 0;
 }
 
 body .right-side-bar {
@@ -116,8 +117,8 @@ body div.home div.name {
 }
 
 body div.home div.name h1 {
-    letter-spacing: 0.5vw;
-    font-size: 4vw;
+    letter-spacing: 0.25vw;
+    font-size: 4.5vw;
     height: 6vw;
     margin: 0;
     padding: 0;
@@ -135,7 +136,7 @@ body div.home div.name h4 {
 
 body div.home div.name div.social-icons {
     font-size: 4vw;
-    margin-top: 5px;
+    margin: 2px 5px 0px 0px;
     color: #c9c9c9;
 }
 
@@ -148,45 +149,82 @@ body div.about {
     z-index: 1;
 }
 
+body div.about div.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 5vw;
+    padding: 2vw 5.5vw 2vw 5.5vw;
+    background-color: #212121;
+    border: #dd7519 1.25vw solid;
+}
+
+body div.about h3 {
+    font-size: min(4.5vw, 25px);
+    margin: 1.75vw 0vw 0vw;
+    padding: 0;
+}
+
+body div.about p {
+    font-size: min(3.5vw, 17.5px);
+    margin: 1vw 0vw 2.5vw 0vw;
+    padding: 0;
+}
+
+body div.about div.production {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.25vh;
+}
+
+body div.about div.production h2 {
+    font-size: max(4vw, 25px);
+    color: #dd7519;
+    margin: 2vh;
+    padding: 0;
+}
+
+body div.about div.production div.contents img {
+    width: 13vw;
+    height: 12.5vw;
+    padding: 1.25vw;
+    margin: 0.75vw;
+    box-shadow: 2px 2px 5px black;
+    background-color: #212121;
+    border: #dd7519 1vw solid;
+}
+
 body div.about div.content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-body div div.description {
+body div.about div.content div.framework {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 70%;
-    margin: 5vw;
-    padding: 2vw 7vw 2vw 7vw;
-    background-color: #212121;
-    border-left: #dd7519 1.5vw solid;
+    margin: 2vw;
+    color: #212121;
+    padding: 1vw 6vw 1vw 6vw;
+    background-color: #dd7519;
+    border: #212121 1.75vw solid;
 }
 
-body div div.prefer-languages {
+body div.about div.content div.prefer-languages {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 25%;
     margin: 2vw;
-    padding: 1vw 7vw 1vw 7vw;
-    background-color: #dd7519;
-    border-right: #212121 2vw solid;
     color: #212121;
-}
-
-body div h3 {
-    font-size: min(3.5vw, 25px);
-    margin: 2vw 0vw 0vw 0vw;
-    padding: 0;
-}
-
-body div p {
-    font-size: min(3.5vw, 17.5px);
-    margin: 1vw 0vw 2vw 0vw;
-    padding: 0;
+    padding: 1vw 6vw 1vw 6vw;
+    background-color: #dd7519;
+    border: #212121 1.75vw solid;
 }
 
 header nav.navigator div.nav-list div.navigate:hover {
@@ -197,9 +235,16 @@ header nav.navigator div.nav-list div.navigate *:hover {
     color: #dd7519;
 }
 
+body div.about div.production div.contents img:hover {
+    margin: 0 1.25vw 1.25vw 0;
+}
+
 @media screen and (max-width: 900px) {
     header nav img.menu-bar-img {
         display: block;
+        rgb(124,
+        37,
+        37)
     }
     header nav.navigator {
         border-left: 0px;
@@ -243,16 +288,13 @@ header nav.navigator div.nav-list div.navigate *:hover {
         padding: 15%;
         display: block;
     }
-    body div.about {
-        flex-direction: column;
-    }
     body div.about div.content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    body div div.prefer-languages {
+    body div.about div.content div.prefer-languages {
         width: 70%;
     }
 }
